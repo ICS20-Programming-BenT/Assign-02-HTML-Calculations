@@ -16,8 +16,8 @@
 
     <!-- Google's MDL -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-light_green.min.css">
-
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-orange.min.css" />
+    
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -31,54 +31,35 @@
     <!-- JavaScript -->
     <script src="./js/script.js"></script>
 
-      <!-- Container for web page content -->
-      <main class="mdl-layout__content" style = "padding-left:20px; padding-right:20px;">
+    <!-- Web page heading -->
+    <h1>The Volume and the Surface Area of a Cone</h1>
 
-        <!-- Web page heading -->
-        <h1>The Volume and the Surface Area of a Cone</h1>
-
-        <!-- Body text -->
-                
-        <!-- Simple Textfield -->
-        <form action="#">
-          <p>Enter value of base in cm:</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="base-of-triangle"
-            />
-            <label class="mdl-textfield__label" for="base-of-triangle">base (cm) ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
+      <!-- Body text with user input form -->
+      <p>Please enter the value of the radius of your cone, as well as the value of the height (in cm):</p>
+        <form action="javascript:calculateButtonClicked()">
+          <label for="radiusOfCone">Radius of cone (in cm):</label>
+          <input type="float" id="radius-cone" placeholder="Radius in cm..."><br><br>
+          <label for="heightOfCone">Height of cone (in cm):</label>
+          <input type="float" id="height-cone" placeholder="Height in cm..."><br><br>
+          <input type="submit" value="Calculate!">
         </form>
+      </p>
+        <div id="calculations">
+          <div id="volume-cone"></div>
+          <div id="surface-area-cone"></div>
+        </div>
+        <br><br>
 
-        <!-- Numeric Textfield -->
-        <form action="#">
-          <p>Enter value of height in cm:</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="height-of-triangle"
-            />
-            <label class="mdl-textfield__label" for="height-of-triangle">height (cm) ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-
-        <!-- Accent-colored raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="calculateAreaOfTriangle ()">
-          Button
-        </button>
-        <br>
-        <p>
-          <div id="answers">
-            <div id="area"></div>
-          </div>
-        </p>
-      </main>
+      <!-- MDL radio button -->
+      <p></p>
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+        <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+        <span class="mdl-radio__label">Yes</span>
+      </label>
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+        <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+        <span class="mdl-radio__label">No</span>
+      </label>
+    </main>
   </body>
 </html>

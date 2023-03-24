@@ -1,13 +1,15 @@
 /* Created by: Ben Thomson
-* Created on: 03/20/2023
+* Created on: 03/24/2023
 * This CSS file defines the style for index.html
-* ICS2O-Unit2-04-HTML-AreaTriangle
+* ICS2O-Assign-02-HTML-Calculations
 */
 
 body {
   background-color: rgb(154 140 152);
   font-weight: 900;
   color: #f2e9e4;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 h1 {
@@ -18,10 +20,20 @@ h1 {
 }
 
 form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900; 
   background-color: #4a4e69;
   padding: 20px;
 }
 
 p {
-  background-color: #;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  background-color: #4a4e69;
+  padding: 20px;
+}
+
+div {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900; 
 }
