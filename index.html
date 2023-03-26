@@ -31,9 +31,19 @@
     <!-- JavaScript -->
     <script src="./js/script.js"></script>
 
-    <!-- Web page heading -->
-    <h1>The Volume and the Surface Area of a Cone</h1>
+    <main class = "mdl-layout__content" style = "padding-left:20px; padding-right:20px;">
+      <!-- Web page heading -->
+      <h1>The Volume and the Surface Area of a Cone</h1>
 
+      <!-- Body text -->
+      <p>Welcome to my web page about cones! Below, you can find an image of a cone, as well as the formulas for calculating the volume and the surface area. If you would like, feel free to write your own values in the form below, and watch this web page calculate the volume and the surface area!</p>
+      <br>
+
+      <!-- Images of cone and formulas -->
+      <img src="./images/cone_image.png"><br>
+      <img src="./images/cone_volume.png"><br>
+      <img src="./images/cone_surface_area.png"><br>
+  
       <!-- Body text with user input form -->
       <p>Please enter the value of the radius of your cone, as well as the value of the height (in cm):</p>
         <form action="javascript:calculateButtonClicked()">
@@ -48,18 +58,20 @@
           <div id="volume-cone"></div>
           <div id="surface-area-cone"></div>
         </div>
-        <br><br>
-
+        <br>
+  
       <!-- MDL radio button -->
-      <p></p>
+      <p>Indicate on the buttons below if you found this web page useful:</p>
       <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-        <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+        <input onclick="yesButtonClicked()" type="radio" id="option-1" class="mdl-radio__button" name="options" value="1">
         <span class="mdl-radio__label">Yes</span>
       </label>
       <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-        <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+        <input onclick="noButtonClicked()" type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
         <span class="mdl-radio__label">No</span>
       </label>
+      <br><br>
+      <div id="radio-button"></div>
     </main>
   </body>
 </html>

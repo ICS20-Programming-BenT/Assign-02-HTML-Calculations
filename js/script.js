@@ -21,3 +21,17 @@ function calculateButtonClicked () {
   document.getElementById('volume-cone').innerHTML = "The area of the cone is " + volumeOfCone.toFixed(2) + " cm<sup>3</sup>."
   document.getElementById('surface-area-cone').innerHTML = "The surface area of the cone is " + surfaceAreaOfCone.toFixed(2) + " cm <sup>2</sup>."
 }
+
+//This function displays results if the Yes button is clicked.
+function yesButtonClicked () {
+
+  //Display text to the screen
+  document.getElementById("radio-button").innerHTML = "<p>I'm glad you liked my web page!</p>"
+}
+
+//This function displays results if the No button is clicked.
+function noButtonClicked () {
+
+  //Display text to the screen
+  document.getElementById("radio-button").innerHTML = "<p>I'm sorry you did not like my web page.</p>"
+}
