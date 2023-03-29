@@ -31,6 +31,7 @@
     <!-- JavaScript -->
     <script src="./js/script.js"></script>
 
+    <!-- Container for web page content -->
     <main class = "mdl-layout__content" style = "padding-left:20px; padding-right:20px;">
       <!-- Web page heading -->
       <h1>The Volume and the Surface Area of a Cone</h1>
@@ -48,17 +49,19 @@
       <p>Please enter the value of the radius of your cone, as well as the value of the height (in cm):</p>
         <form action="javascript:calculateButtonClicked()">
           <label for="radiusOfCone">Radius of cone (in cm):</label>
-          <input type="float" id="radius-cone" placeholder="Radius in cm..."><br><br>
+          <input type="number" step="0.01" id="radius-cone" placeholder="Radius in cm..."><br><br>
           <label for="heightOfCone">Height of cone (in cm):</label>
-          <input type="float" id="height-cone" placeholder="Height in cm..."><br><br>
+          <input type="number" step="0.01" id="height-cone" placeholder="Height in cm..."><br><br>
           <input type="submit" value="Calculate!">
         </form>
       </p>
-        <div id="calculations">
-          <div id="volume-cone"></div>
-          <div id="surface-area-cone"></div>
-        </div>
-        <br>
+
+      <!-- Space for displaying user information -->
+      <div id="calculations">
+        <div id="volume-cone"></div>
+        <div id="surface-area-cone"></div>
+      </div>
+      <br>
   
       <!-- MDL radio button -->
       <p>Indicate on the buttons below if you found this web page useful:</p>

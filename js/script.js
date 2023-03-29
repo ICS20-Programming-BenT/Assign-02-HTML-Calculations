@@ -18,7 +18,7 @@ function calculateButtonClicked () {
   let surfaceAreaOfCone = Math.PI * radiusOfCone * (radiusOfCone + Math.sqrt(heightOfCone**2 + radiusOfCone**2))
   
   // Display the results
-  document.getElementById('volume-cone').innerHTML = "The area of the cone is " + volumeOfCone.toFixed(2) + " cm<sup>3</sup>."
+  document.getElementById('volume-cone').innerHTML = "The volume of the cone is " + volumeOfCone.toFixed(2) + " cm<sup>3</sup>."
   document.getElementById('surface-area-cone').innerHTML = "The surface area of the cone is " + surfaceAreaOfCone.toFixed(2) + " cm <sup>2</sup>."
 }
 
