@@ -6,7 +6,7 @@
 
 "use strict";
 
-//This function will calculate the volume and suface area of a cone.
+//This function will calculate the volume and surface area of a cone.
 function calculateButtonClicked () {
  
   // Get the user input
